@@ -39,7 +39,7 @@ MODULE = Compress::LZ4    PACKAGE = Compress::LZ4
 
 PROTOTYPES: ENABLE
 
-SV *
+void
 compress (sv)
     SV *sv
 PREINIT:
@@ -68,7 +68,7 @@ PPCODE:
     SvPOK_only(retsv);
     XPUSHs(retsv);
 
-SV *
+void
 decompress (sv)
     SV *sv
 ALIAS:
