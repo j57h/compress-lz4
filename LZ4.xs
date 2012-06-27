@@ -9,7 +9,7 @@
 
 #include "lz4.h"
 
-#define BLOCK_MAGIC         0x4c5a3445 /* LZ4E (LZ4 Extended) */
+#define BLOCK_MAGIC         0x50345a4c /* LZ4P (LZ4Perl) */
 #define BLOCK_MAGIC_SIZE    4
 #define BLOCK_LENGTH_SIZE   4
 #define HEADER_LENGTH       (BLOCK_MAGIC_SIZE + BLOCK_LENGTH_SIZE)
